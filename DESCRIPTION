@@ -5,7 +5,10 @@ Version: 1.0
 Date: 2022-09-29
 Author: Dinesh and Mahesh
 Maintainer: Who to complain to <dinsu875@student.liu.se>
-Description: When searched for a place it will show the location based on gthe latitude and longitude
+Description: When searched for a place it will show the location based on gthe latitude and longitude.
 License: GPL-2
-RoxygenNote: 6.1.0
-Encoding: UTF-8
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports:tidyverse,magrittr,leaflet,rvest,knitr,dplyr,httr,jsonlite
+                                                                                                                                                                                                                                                                                                                                                                                                                                                  

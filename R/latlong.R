@@ -1,28 +1,20 @@
-#' This is an API package 
+#' This is an API package that interacts with OpenStreetmaps
 #'  
 #'  
-#'  This package interacts with OpenStreetmaps 
-#'  
-#'  @param  place (string)
-#'  
-#'  @return latitude and longitude
-#'  
-#'  @examples     
-#'  latlong(Lund)
-#'  
-#'  @export
+#' @param place (string)
+#' @return latitude and longitude
+#' @export
+#' @import tidyverse
+#' @import magrittr
+#' @import leaflet
+#' @import rvest
+#' @import knitr
+#' @import dplyr
+#' @import httr
+#' @import jsonlite
 
 
 
-library(shiny)
-library(magrittr)
-library(leaflet)
-library(rvest)
-library(knitr)
-library(tidyverse)
-library(dplyr)
-library(httr)
-library(jsonlite)
 
 
 # place<-"Lund"  #place input!
@@ -31,7 +23,10 @@ library(jsonlite)
 
 latlong<-function(place)
 {
-  z<-list(address=place) #create the list of parameters I will send to google.
+  
+  
+  
+  z<-list(address=place) 
   url <- "https://nominatim.openstreetmap.org/search?q="
   get_coord = paste0(url, place, "&format=geojson")
 
