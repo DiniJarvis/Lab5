@@ -1,0 +1,9 @@
+Package: searchapi
+Type: Package
+Title: Map
+Version: 1.0
+Date: 2022-09-29
+Author: Dinesh and Mahesh
+Maintainer: Who to complain to <dinsu875@student.liu.se>
+Description: When searched for a place it will show the location based on gthe latitude and longitude
+License: GPL-2
