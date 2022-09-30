@@ -12,6 +12,7 @@
 #' @import dplyr
 #' @import httr
 #' @import jsonlite
+#' @import shiny
 
 
 
