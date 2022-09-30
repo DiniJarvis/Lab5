@@ -82,13 +82,6 @@ output$Location <- renderText(paste(c(o1,o2)))
     })
 ```
 
-## Example
-
-Enter the place name (Example: Linkoping), then enter the key and click the button "Find exact location"
-
-```{r, out.width = "700px", echo=FALSE}
-knitr::include_graphics("D:/Linkoping University/Year1/Sem1/Period 1/Example.png")
-```
 
 ## Reference
 
