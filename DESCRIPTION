@@ -5,7 +5,7 @@ Version: 1.0
 Date: 2022-09-29
 Author: Dinesh and Umamaheswarababu
 Maintainer: Who to complain to <dinsu875@student.liu.se>
-Description: When searched for a place it will show the location based on gthe latitude and longitude.
+Description: When searched for a place it will show the location based on the latitude and longitude.
 License: GPL-2
 Suggests: 
     rmarkdown,
