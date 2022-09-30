@@ -1,6 +1,6 @@
 ---
 title: "Search Api"
-author: "Dinesh and Mahesh"
+author: "Dinesh and Umamaheswarababu"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
@@ -33,10 +33,13 @@ This vignette summarizes functions of API package that gets connected with Nomin
 The function "latlong" uses search api. It takes the place "place" as input and returns the exact latitude and longitude along with the formatted address.
 
 ```{r}
+#function to capture latitude and longitude of place
 latlong<-function(place)
-  #place <- "Vellore"
 {
-  z<-list(address=place) #create the list of parameters I will send to google.
+  
+  
+  
+  z<-list(address=place) 
   url <- "https://nominatim.openstreetmap.org/search?q="
   get_coord = paste0(url, place, "&format=geojson")
 
@@ -48,10 +51,6 @@ latlong<-function(place)
   lon <- response$features$geometry$coordinates[[1]][1]
   lat <- response$features$geometry$coordinates[[1]][2]
   
-  
-  #parsed_place<-parsing(get_coord) #I just parse what I receive.
-  #x<-parsed_place$results #now all my results are in x!
-  #x$formatted_address
   list("latitude"=lat, "longitude" = lon)
 }
 ```

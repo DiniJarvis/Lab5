@@ -1,4 +1,4 @@
-#' This is an API package that interacts with OpenStreetmaps
+#' This is a package that interacts with OpenStreetmaps API
 #'  
 #'  
 #' @param place (string)
@@ -21,7 +21,7 @@
 # place<-"Lund"  #place input!
 
 
-
+#function to capture latitude and longitude of place
 latlong<-function(place)
 {
   
@@ -39,10 +39,6 @@ latlong<-function(place)
   lon <- response$features$geometry$coordinates[[1]][1]
   lat <- response$features$geometry$coordinates[[1]][2]
   
-  
-  #parsed_place<-parsing(get_coord) #I just parse what I receive.
-  #x<-parsed_place$results #now all my results are in x!
-  #x$formatted_address
   list("latitude"=lat, "longitude" = lon)
 }
 

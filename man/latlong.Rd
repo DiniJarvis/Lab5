@@ -2,7 +2,7 @@
 % Please edit documentation in R/latlong.R
 \name{latlong}
 \alias{latlong}
-\title{This is an API package that interacts with OpenStreetmaps}
+\title{This is a package that interacts with OpenStreetmaps API}
 \usage{
 latlong(place)
 }
@@ -13,5 +13,5 @@ latlong(place)
 latitude and longitude
 }
 \description{
-This is an API package that interacts with OpenStreetmaps
+This is a package that interacts with OpenStreetmaps API
 }
