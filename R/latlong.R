@@ -24,9 +24,7 @@
 #function to capture latitude and longitude of place
 latlong<-function(place)
 {
-  
-  
-  
+  place <- gsub(" ", "+", place) # replace space with + to retrieve the location
   z<-list(address=place) 
   url <- "https://nominatim.openstreetmap.org/search?q="
   get_coord = paste0(url, place, "&format=geojson")
