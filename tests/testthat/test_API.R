@@ -27,7 +27,7 @@ test_that("latlong rejects errounous input", {
   expect_error(latlong("hej","error"))
 })
 
-test_that("latlong() is working with other language strings", {
+test_that("latlong() rejects errounous input ", {
   expect_false(is.integer("museum"))
 })
 
